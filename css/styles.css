@@ -72,9 +72,31 @@ body {
 
 /* ========== Header ========== */
 
-/* .header-container {
+.page-header-container {
   display: flex;
-} */
+  align-items: center;
+}
+
+.page-nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.address-list {
+  display: flex;
+}
+
+.address {
+  margin-left: auto;
+}
 
 .page-logo {
   font-weight: 800;
@@ -83,6 +105,9 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--secondary-page-color);
+  margin-right: 76px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .logo-decor {
@@ -111,6 +136,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--text-color);
+  margin-right: 40px;
 }
 
 /* ========== /Header ========== */
