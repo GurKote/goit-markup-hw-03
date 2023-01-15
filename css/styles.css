@@ -171,7 +171,6 @@ body {
   color: #ffffff;
   background-color: var(--primary-brand-color);
 
-  /* align-items: center; */
   /* display: flex; */
   /* text-transform: uppercase; */
 }
@@ -183,8 +182,14 @@ body {
 
 /* ================ /hero ================== */
 
-/* ================ features ================== */
+/* =========== Styles for sections ========= */
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 .section-title {
+  margin-bottom: 72px;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
@@ -194,6 +199,7 @@ body {
 }
 
 .section-suptitle {
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -207,14 +213,29 @@ body {
   color: var(--text-color);
 }
 
-/* ================ /features ================== */
+/* =========== Styles for sections ========= */
+
+/* ========= section 3 - features ======== */
+.features-section {
+  padding-top: 120px;
+  padding-bottom: 0px;
+}
+
+.features-list {
+  display: flex;
+  gap: 24px;
+}
+
+/* .features-item {
+  flex-basis: calc((100% - 72px) / 4);
+} */
+
+/* ========= section 3 - features ======== */
 
 /* ========= section 4 - team ======== */
 
 .team {
   background-color: #f4f4fd;
-  padding-top: 120px;
-  padding-bottom: 120px;
 }
 
 .team-item {
@@ -230,6 +251,7 @@ body {
 
 .footer {
   background-color: var(--secondary-page-color);
+  padding: 100px 0px;
 }
 
 .footer-text {
