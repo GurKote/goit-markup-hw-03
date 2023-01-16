@@ -256,16 +256,15 @@ body {
 
 .team-list {
   display: flex;
-  flex-wrap: wrap;
   gap: 24px;
 }
 
 .team-list-item {
-  flex-basis: calc((100% - 72px) / 4);
   background-color: var(--white-background-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
+  /* border: 1px solid #000000; */
 }
 
 .team-text-item {
@@ -302,12 +301,24 @@ body {
 
 /* =========== Portfolio ========= */
 
+.portfolio-section {
+  padding-top: 96px;
+}
+
+.filters-list {
+  padding-bottom: 72px;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
 .filter-btn {
+  padding: 12px 24px;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
-  display: flex;
+  line-height: 1.5px;
+
   align-items: center;
   text-align: center;
   letter-spacing: 0.04em;
@@ -317,17 +328,36 @@ body {
 
 .filter-btn:hover,
 .filter-btn:focus {
+  padding: 12px 24px;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.5;
-  display: flex;
+  line-height: 1.5px;
+
   align-items: center;
   text-align: center;
   letter-spacing: 0.04em;
   color: #ffffff;
   background-color: #404bbf;
   border-color: transparent;
+}
+
+/* padding: 16px 32px;
+  min-width: 169px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  margin-left: auto;
+  margin-right: auto; */
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+}
+
+.portfolio-list-item {
+  flex-basis: calc((100% - 48px) / 3);
 }
 
 /* =========== /Portfolio ========= */
